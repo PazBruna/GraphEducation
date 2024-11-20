@@ -80,7 +80,7 @@ O projeto GraphEdu utiliza uma arquitetura baseada em banco de dados de grafos p
 ## Estrutura do Repositório
 `criacaoDeNos_E_relacoes.cypher`: Scripts Cypher para criação de nós, relacionamentos e consultas pré-definidas.
 
-`/scripts/`: Código Python para extração, transformação e carregamento dos dados do banco relacional para o Graph Database .
+`main.py`: Código Python para extração, transformação e carregamento dos dados do banco relacional para o Graph Database .
 
 `README.md`: Documentação do projeto.
  ### Queries: 
