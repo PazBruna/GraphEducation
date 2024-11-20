@@ -70,13 +70,23 @@ O projeto GraphEdu utiliza uma arquitetura baseada em banco de dados de grafos p
 - `MatrizCurricular:` Representa as matrizes curriculares com atributos como semestre, ano e codigo.
 
 ## Relacionamentos
-- `CHEFIA:` Liga um nó Professor a um nó Departamento (relação um-para-um).
-- `PERTENCE:` Liga um nó Curso a um nó Departamento (relação muitos-para-um).
-- `INCLUI:` Liga um nó MatrizCurricular a um nó Materia (relação muitos-para-muitos).
-- `CURSOU:` Liga um nó Aluno a um nó Materia, com atributos como nota, semestre e ano.
-- `ORIENTA:` Liga um nó Professor a um nó Aluno como orientador de TCC.
+- `CHEFIA:` Liga um nó Professor a um nó Departamento.
+- `PERTENCE A:` Liga um nó Professor a um nó Departamento.
+- `INCLUI:` Liga um nó MatrizCurricular a um nó Materia.
+- `CURSOU:` Liga um nó Curso a um nó Materia.
+- `ORIENTA:` Liga um nó Professor a um nó Orientador. (o professor ORIENTA )
+- `LECIONA:` Liga um nó Professor a um nó Leciona. (o professor LECIONA )
+- `ORIENTADO:` Liga um nó Aluno a um nó Orientador.
+- `CURSA:` Liga um nó Aluno a um nó Cursando.
+- `LECIONA_MATERIA:` Liga um nó Leciona a um nó Materia.
+- `CURSA_MATERIA:` Liga um nó Cursando a um nó Materia.
+- `CURSO_PERTENCE_A:` Liga um nó Curso a um nó Departamento.
+- `ESTUDA_EM:` Liga um nó Aluno a um nó Curso.
+- `INCLUI:` Liga um nó Aluno a um nó Curso.
+- `GERENCIA:` Liga um nó Materia a um nó Departamento.
+- `CONTEM:` Liga um nó MatrizCurricular a um nó materia.
+- `MATRIZ_PERTENCE_A:` Liga um nó MatrizCurricular a um nó Curso.
 
-  
 ## Estrutura do Repositório
 `criacaoDeNos_E_relacoes.cypher`: Scripts Cypher para criação de nós, relacionamentos e consultas pré-definidas.
 
